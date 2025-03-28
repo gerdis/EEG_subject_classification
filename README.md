@@ -1,8 +1,7 @@
 # Distinguishing individuals based on their EEG signals using an attention-supported tribrid ConvNet
 ## Project description
 
-The goal of this project was to train a convolutional neural network to classify EEG signals as belonging to one of two individuals performing the same  
-task (counting squares of a chosen color). 
+The goal of this project was to train a convolutional neural network to classify EEG signals as belonging to one of two individuals performing the same task (counting squares of a chosen color). 
 
 Models were trained for 7 randomly selected pairs of subjects, using 2 different data folds per pairing and the model architecture described below. 
 

@@ -57,12 +57,15 @@ plots:
 
 ## Dependencies
 
-pandas 2.2.2
-numpy 1.26.4
-matplotlib 3.10.0
-sklearn 1.6.1
-keras 3.8.0
-tensorflow 2.18.0
+ - pandas 2.2.2
+
+ - numpy 1.26.4
+
+ - matplotlib 3.10.0
+
+ - keras 3.8.0
+
+ - tensorflow 2.18.0
 
 ## References
 

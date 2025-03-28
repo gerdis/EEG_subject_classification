@@ -1,26 +1,25 @@
-# Distinguishing individuals based on their EEG signals using a tribrid ConvNet with reciprocal attention
-
+# Distinguishing individuals based on their EEG signals using an attention-supported tribrid ConvNet
 ## Project description
 
-The goal of this project was to train a convolutional neural network to classify EEG signals as belonging to one of two individuals performing a counting task. 
+The goal of this project was to train a convolutional neural network to classify EEG signals as belonging to one of two individuals performing the same  
+task (counting squares of a chosen color). 
 
-The project was designed as a binary classification task where the model learned to distinguish between 
-two given subjects performing the same "colorRound" task (counting squares of a chosen color). 
-
-Training was repeated for 7 randomly selected pairs of subjects, using 2 different data folds per pairing and the architecture described above. 
+Models were trained for 7 randomly selected pairs of subjects, using 2 different data folds per pairing and the model architecture described below. 
 
 ## Dataset
 
 [UC Berkeley-Biosense Synchronized Brainwave Dataset](https://www.kaggle.com/datasets/berkeley-biosense/synchronized-brainwave-dataset)
 
-The dataset contains 1-second samples of single-channel EEG readings sampled at 512 Hz. The signals were recorded using a consumer-grade headset with a single-electrode
+The dataset contains 1-second windows of single-channel EEG readings sampled at 512 Hz. The signals were recorded using a consumer-grade headset with a single-electrode
 while the subjects responded to different types of stimuli. 
 
 ## Data Augmentation
 
 To increase the number of available training samples, a cropped training strategy inspired by Schirrmeister et al. (2017) was used. For each subject, all samples recorded during the 
 "colorRound" stimulus were concatenated in chronological order. New 1-second samples were then generated as sliding time windows, such that the start and end of each sample i+1 
-was shifted by 375 ms in relation to sample i. 
+was shifted by 375 ms in relation to sample i.
+
+![Plot illustrating the data augmentation procedure](data_augmentation_example.png)
 
 ## Model Architecture
 
@@ -32,11 +31,21 @@ but different kernel sizes in the convolutional layers.
 The outputs of the processing paths were concatenated, and additive (self) attention was applied, before they were merged by summation.  
 The idea was for the paths to "collaborate" by focusing on different features in the input, but taking into account their counterparts' representations.
 
+![Depiction of model architecture](model_architecture_plot.png)
+
 ## Contents of the Repository
 
- - EEG_data_inspection.ipynb
+notebooks:
 
- - 
+ - EEG_data_inspection.ipynb: exploratory data analysis
+
+ - EEG_subject_classification: contains the code for data augmentation and the classifier
+
+plots:
+
+ - data_augmentation_example.png
+
+ - model_architecture_plot.png
 
 ## Dependencies
 

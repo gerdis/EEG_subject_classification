@@ -45,15 +45,15 @@ The idea was for the paths to "collaborate" by focusing on different features in
 
 notebooks:
 
- - EEG_data_inspection.ipynb: exploratory data analysis
+ - *EEG_data_inspection.ipynb*: exploratory data analysis
 
- - EEG_subject_classification: contains the code for data augmentation and the classifier
+ - *EEG_subject_classification*: contains the code for data augmentation and the classifier
 
 plots:
 
- - data_augmentation_example.png
+ - *data_augmentation_example.png*
 
- - model_architecture_plot.png
+ - *model_architecture_plot.png*
 
 ## Dependencies
 

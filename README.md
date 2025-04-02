@@ -35,6 +35,10 @@ but different kernel sizes in the convolutional layers.
 The outputs of the processing paths were concatenated, and additive (self) attention was applied, before they were merged by summation.  
 The idea was for the paths to "collaborate" by focusing on different features in the input, but taking into account their counterparts' representations.
 
+<b>Figure 2</b>
+
+<i>Architecture of the Model</i>
+
 ![Depiction of model architecture](model_architecture_plot.png)
 
 <i>Figure 2. Architecture of the model.</i>

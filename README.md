@@ -47,13 +47,17 @@ The idea was for the paths to "collaborate" by focusing on different features in
 
 ## Performance
 
+<b>Table 1</b>
+
+<i>Results for Subject Pairings</i>
+
 |metric         |subj. 3 & 7 |subj. 1 & 27 |subj. 8 & 4 |subj. 7 & 28 |subj. 7 & 1 |subj. 1 & 28 |subj. 6 & 18|
 |---------------|------------|-------------|------------|-------------|------------|-------------|------------|
 |binary_accuracy|0.722200    |0.828900 	   |0.881600 	|0.802600     |0.684200    |0.631600 	 |0.947400    |
 |precision 	|0.750800    |0.842400 	   |0.836600 	|0.756000     |0.751300    |0.625000 	 |0.928600    |
 |recall 	|0.710500    |0.815800 	   |0.947400 	|0.894700     |0.552600    |0.657900 	 |0.973700    |
 
-<i>Table 1. Results for subject pairings; averaged over folds</i>
+<p><i>Note.</i>Results for each subject pairing were averaged over folds.</p>
 
 ## Contents of the Repository
 

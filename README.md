@@ -57,7 +57,7 @@ The idea was for the paths to "collaborate" by focusing on different features in
 |precision 	|0.750800    |0.842400 	   |0.836600 	|0.756000     |0.751300    |0.625000 	 |0.928600    |
 |recall 	|0.710500    |0.815800 	   |0.947400 	|0.894700     |0.552600    |0.657900 	 |0.973700    |
 
-<p><i>Note.</i>Results for each subject pairing were averaged over folds.</p>
+<p><i>Note.</i> Results for each subject pairing were averaged over folds.</p>
 
 ## Contents of the Repository
 
